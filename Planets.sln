@@ -5,6 +5,21 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets.API", "Planets.API\Planets.API.csproj", "{BAD3FFF6-3168-422B-8CE1-917790CBA77C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets.Entities", "Planets.Entities\Planets.Entities.csproj", "{CFF72869-129C-4C29-841B-00B7B6FE69CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets.BusinessLogicLayer", "Planets.BusinessLogicLayer\Planets.BusinessLogicLayer.csproj", "{460D6303-64E1-423C-A01F-86F943581A4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets.API.Tests", "Planets.API.Tests\Planets.API.Tests.csproj", "{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B30CFE3-A639-4CA3-BE44-E195FF88EB9D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9B16E33B-E0E6-42B4-B581-E460B37A56BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets.Migrations", "Planets.Migrations\Planets.Migrations.csproj", "{79D69B92-FB32-42A3-A089-041EC0C9C79D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +30,28 @@ Global
 		{BAD3FFF6-3168-422B-8CE1-917790CBA77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAD3FFF6-3168-422B-8CE1-917790CBA77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAD3FFF6-3168-422B-8CE1-917790CBA77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF72869-129C-4C29-841B-00B7B6FE69CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF72869-129C-4C29-841B-00B7B6FE69CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF72869-129C-4C29-841B-00B7B6FE69CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF72869-129C-4C29-841B-00B7B6FE69CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460D6303-64E1-423C-A01F-86F943581A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460D6303-64E1-423C-A01F-86F943581A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460D6303-64E1-423C-A01F-86F943581A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460D6303-64E1-423C-A01F-86F943581A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D69B92-FB32-42A3-A089-041EC0C9C79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D69B92-FB32-42A3-A089-041EC0C9C79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D69B92-FB32-42A3-A089-041EC0C9C79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D69B92-FB32-42A3-A089-041EC0C9C79D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7C43458-F7CA-468F-9955-6C3F6DFE0A3F} = {9B16E33B-E0E6-42B4-B581-E460B37A56BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3561CB3-0BC0-46E5-A66F-D0FC2B612FBF}
