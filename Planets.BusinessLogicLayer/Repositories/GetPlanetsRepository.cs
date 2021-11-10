@@ -17,6 +17,7 @@ namespace Planets.BusinessLogicLayer.Repositories
             // For now this can be manual
             return _context.Planets.Select(p => new PlanetDto
             {
+                Id = p.Id,
                 Name = p.Name,
                 DiameterMiles = p.DiameterMiles,
                 MassKilograms = p.MassKilograms,

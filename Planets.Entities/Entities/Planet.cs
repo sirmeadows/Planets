@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Planets.Entities.Entities
 {
@@ -13,5 +14,8 @@ namespace Planets.Entities.Entities
         public double MilesFromSun { get; set; }
         public double MassKilograms { get; set; }
         public double DiameterMiles { get; set; }
+        [MaxLength(500)]
+        public string Namesake { get; set; }
+        public int LengthOfYearInDays { get; set; }
     }
 }

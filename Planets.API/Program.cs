@@ -12,8 +12,8 @@ builder.Services.AddSwaggerGen();
 // EF Core
 builder.Services.AddDbContext<PlanetsDbContext>(options =>
     options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        b => b.MigrationsAssembly("Planets.Migrations")));
+    builder.Configuration.GetConnectionString("DefaultConnection"),
+    b => b.MigrationsAssembly("Planets.Migrations")));
 
 // Repositories
 builder.Services.AddScoped<IGetPlanetsRepository, GetPlanetsRepository>();

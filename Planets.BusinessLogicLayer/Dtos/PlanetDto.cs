@@ -2,6 +2,7 @@
 {
     public class PlanetDto
     {
+        public int Id { get; internal set; }
         public string Name { get; set; }
         public string PictureUrl { get; set; }
         public double MilesFromSun { get; set; }

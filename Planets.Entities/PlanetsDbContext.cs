@@ -1,15 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using Planets.Entities.Extensions;
 
 namespace Planets.Entities
 {
     public class PlanetsDbContext : DbContext
     {
-        private readonly IConfiguration _config;
-
-        public PlanetsDbContext(IConfiguration config)
+        public PlanetsDbContext() : base()
         {
-            _config = config;
+
         }
 
         public PlanetsDbContext(DbContextOptions options) : base(options)
@@ -19,10 +17,9 @@ namespace Planets.Entities
 
         public DbSet<Planet> Planets { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            optionsBuilder
-                .UseSqlServer(_config.GetConnectionString("Default"));
+            modelBuilder.Seed();
         }
     }
 }

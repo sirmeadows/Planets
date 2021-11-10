@@ -13,4 +13,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Planets.Entities\Planets.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
