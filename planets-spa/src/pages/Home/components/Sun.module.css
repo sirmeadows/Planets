@@ -1,0 +1,46 @@
+.sun {
+    z-index: 99;
+    position: fixed;
+    left: 50%;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #ffcc33;
+    opacity: 0.8;
+    margin-top: 1vw;
+    margin-left: -5vw;
+    animation-name: sunAfterGlow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sunGlow {
+    z-index: 98;
+    position: fixed;
+    left: 50%;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #fc9601;
+    margin-top: 1vw;
+    margin-left: -5vw;
+}
+
+@keyframes sunAfterGlow {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,13 @@
+.containerStyles {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+
+.centerStyles {
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+}

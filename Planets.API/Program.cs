@@ -15,6 +15,15 @@ builder.Services.AddDbContext<PlanetsDbContext>(options =>
     builder.Configuration.GetConnectionString("DefaultConnection"),
     b => b.MigrationsAssembly("Planets.Migrations")));
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "allowedOrigins",
+        corsBuilder =>
+        {
+            corsBuilder.WithOrigins(builder.Configuration.GetValue<string>("SpaUrls"));
+        });
+});
+
 // Repositories
 builder.Services.AddScoped<IGetPlanetsRepository, GetPlanetsRepository>();
 
@@ -28,6 +37,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("allowedOrigins");
 
 app.MapGet("/planets", (IGetPlanetsRepository repository) => repository.GetPlanets())
     .WithName("GetPlanets");

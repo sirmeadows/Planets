@@ -12,5 +12,7 @@
         public double DiameterMiles { get; set; }
         public double DiameterKilometers { get => MilesFromSun.MilesToKilometers(); }
         public double DiameterBananas { get => MilesFromSun.MilesToBananas(); }
+        public string Namesake { get; set; }
+        public int LengthOfYearInDays { get; set; }
     }
 }

@@ -1,0 +1,34 @@
+.planetsWrapper {
+    position: fixed;
+    text-align: left;
+    width: 100vw;
+    height: 75vh;
+    color: white;
+    margin-top: 25vh;
+}
+
+.planetList {
+    height: 95%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.planetLink {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 50px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.planet {
+    font-size: 24px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-shadow: 2px 2px #000;
+}

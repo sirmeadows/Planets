@@ -1,0 +1,39 @@
+.detailsWrapper {
+    position: fixed;
+    top: 50%;
+    margin-top: -30vh;
+    left: 50%;
+    margin-left: -35vw;
+    width: 70vw;
+    height: 40vh;
+}
+
+.detailsLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.planetImage {
+    width: 50%;
+    height: auto;
+}
+
+.planetDescriptionPanel {
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.planetDescriptionPanel > p > span {
+    font-weight: bold;
+}
+
+.back {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: #fff;
+}

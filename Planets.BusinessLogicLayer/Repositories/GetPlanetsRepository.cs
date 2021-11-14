@@ -22,7 +22,9 @@ namespace Planets.BusinessLogicLayer.Repositories
                 DiameterMiles = p.DiameterMiles,
                 MassKilograms = p.MassKilograms,
                 MilesFromSun = p.MilesFromSun,
-                PictureUrl = p.PictureUrl
+                PictureUrl = p.PictureUrl,
+                Namesake = p.Namesake,
+                LengthOfYearInDays = p.LengthOfYearInDays,
             });
         }
     }
